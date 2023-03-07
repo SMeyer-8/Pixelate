@@ -10,21 +10,37 @@
   </head>
   <body>
     <h1>Pixelate</h1>
-    <div>
-      <label for="column-number" style="font-size: .7rem;">Columns</label>
-      <input id='column-number' type="number" placeholder="0" step="1" style="width: 3em"/>
-      <label for="row-number" style="font-size: .7rem;">Rows</label>
-      <input id='row-number' type="number" placeholder="0" step="1" style="width: 3em"/>
+    <div id="head-panel">
+      <div style="min-width:26%">
+        <label for="column-number" style="font-size: .7rem;">Columns</label>
+        <input id='column-number' type="number" placeholder="0" step="1" style="width: 3em"/>
+        <label for="row-number" style="font-size: .7rem;">Rows</label>
+        <input id='row-number' type="number" placeholder="0" step="1" style="width: 3em"/>
+        <button id="build-button">Build</button>
+      </div>
+      <div>
       <button id='add-row'>Add a row</button>
+      <button id='add-column'>Add a column</button>
+
       <button id="fill-grid">fill Grid</button>
       <button id="fill-blanks">fill Blanks</button>
+      <button id='add-row'>Remove a row</button>
+      <button id='add-column'>Remove a column</button>
       <button id="clear-grid">Clear</button>
-      <select id='select-box'>
-        <!-- add options here! -->
-        <option value="red">Red</option>
-        <option value="purple">Purple</option>
-        <option value="blue">Blue</option>
-      </select>
+      </div>
+    
+      
+      <div>
+        <label for="">Color:</label>
+        <select id='select-box'>
+          <!-- add options here! -->
+          <option value="red">Red</option>
+          <option value="purple">Purple</option>
+          <option value="blue">Blue</option>
+        </select>
+      </div>
+      
+      
     </div>
     <table></table>
   </body>
